@@ -30,7 +30,7 @@ sg.FoliageQuality=0               ; Reduce foliage detail for better performance
 sg.ShadingQuality=0               ; Disable complex shading effects
 sg.LandscapeQuality=2             ; Lower landscape detail to reduce GPU load
 ```
-3. Disable RTX Ray Tracing and Lumen Technology: Ray Tracing and Lumen lighting are very performance-intensive. Disabling them will greatly improve FPS if they are enabled in the game. Add the following lines to your configuration to disable them:
+Disable RTX Ray Tracing and Lumen Technology: Ray Tracing and Lumen lighting are very performance-intensive. Disabling them will greatly improve FPS if they are enabled in the game. Add the following lines to your configuration to disable them:
 ```
 [SystemSettings]
 r.RayTracing=False
@@ -55,12 +55,12 @@ r.DepthOfFieldQuality=0
 r.DefaultFeature.AntiAliasing=0
 r.MaxAnisotropy=16
 ```
-4. Disable Frame Rate Smoothing: By default, Unreal Engine might smooth the frame rate to prevent sharp fluctuations. Disabling this can improve FPS stability. Add the following line to the ```[Script/Engine.Engine]``` section of your GameUserSettings.ini:
+Disable Frame Rate Smoothing: By default, Unreal Engine might smooth the frame rate to prevent sharp fluctuations. Disabling this can improve FPS stability. Add the following line to the ```[Script/Engine.Engine]``` section of your GameUserSettings.ini:
 ```
 [/Script/Engine.Engine]
 bSmoothFrameRate=False
 ```
-5. Optional: Adjust Resolution and Frame Rate Limit: Lowering your in-game resolution (e.g., from 2560x1440 to 1920x1080) can significantly improve FPS. Limiting the frame rate to a specific value can also help stabilize performance. Adjust these settings in the ```[ForeverWinter.FWGameUserSettings]``` section:
+###Optional: Adjust Resolution and Frame Rate Limit: Lowering your in-game resolution (e.g., from 2560x1440 to 1920x1080) can significantly improve FPS. Limiting the frame rate to a specific value can also help stabilize performance. Adjust these settings in the ```[ForeverWinter.FWGameUserSettings]``` section:
 ```
 [/Script/ForeverWinter.FWGameUserSettings]
 bUseVSync=False                   ; Disable VSync for higher FPS
@@ -69,7 +69,7 @@ ResolutionSizeX=1920              ; Set resolution width to 1920 (Full HD)
 ResolutionSizeY=1080              ; Set resolution height to 1080 (Full HD)
 FrameRateLimit=120.000000         ; Limit frame rate to 120 FPS for smoother gameplay
 ```
-6. Save the File: After making these changes, save the GameUserSettings.ini file and close the editor. 7. Restart the Game: Launch ForeverWinter and check your performance. You should notice better FPS and smoother gameplay, especially in demanding areas.
+Save the File: After making these changes, save the GameUserSettings.ini file and close the editor. 7. Restart the Game: Launch ForeverWinter and check your performance. You should notice better FPS and smoother gameplay, especially in demanding areas.
 
 Summary of Changes:
 
